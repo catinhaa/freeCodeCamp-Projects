@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulário da Catinha</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">✨🔍 Formulário da Catinha 📝✨</h1>
+      <p id="description">Por favor, preencha o formulário abaixo pra Catinha ficar feliz. Obrigada!</p>
+    </header>
+    <form id="survey-form" method="get" action="https://register-demo.freecodecamp.org">
+      <fieldset>
+        <label id="name-label" for="name">Seu nome completo: <div><input type="text" id="name" name="name" placeholder="Chico Bento" required></div></label>
+        <label id="email-label" for="email">Seu Email: <div><input type="email" id="email" name="email" placeholder="bento.chico@gmail.com" required></div></label>
+        <label id="number-label" for="number">Sua idade: <div><input type="number" id="number" name="age" min="13" max="120" placeholder="13" required></div></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">De qual região do Brasil você é?
+          <div><select id="dropdown" name="regiao" required>
+            <option value="">Selecione uma região</option>
+            <option value="N">Norte</option>
+            <option value="NE">Nordeste</option>
+            <option value="CO">Centro-Oeste</option>
+            <option value="SE">Sudeste</option>
+            <option value="S">Sul</option>
+          </select></div>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Qual o seu gênero?</legend>
+        <label class="lradio" for="fem"><input type="radio" id="fem" name="genero" value="fem" checked>Feminino</label>
+        <label class="lradio" for="masc"><input type="radio" id="masc" name="genero" value="masc">Masculino</label>
+        <label class="lradio" for="outro"><input type="radio" id="outro" name="genero" value="outro">Outro</label> 
+      </fieldset>
+      <fieldset>
+        <legend>Com quais palavras você se indentifica?</legend>
+        <div class="checkbox"><label class="lradio" for="gatin"><input type="checkbox" id="gatin" name="palavra" value="gatin" checked>Gatin</label></div>
+        <div class="checkbox"><label class="lradio" for="doguin"><input type="checkbox" id="doguin" name="palavra" value="doguin">Doguin</label></div>
+        <div class="checkbox"><label class="lradio" for="chill"><input type="checkbox" id="chill" name="palavra" value="chill"><em>Chill</em>🙏</label></div>
+        <div class="checkbox"><label class="lradio" for="loka"><input type="checkbox" id="loka" name="palavra" value="loka">V1da L0k4</label></div>
+        <div class="checkbox"><label class="lradio" for="rock"><input type="checkbox" id="rock" name="palavra" value="rock">Rock</label></div>
+        <div class="checkbox"><label class="lradio" for="kawaii"><input type="checkbox" id="kawaii" name="palavra" value="kawaii">Kawaii</label></div>
+        <div class="checkbox"><label class="lradio" for="normal"><input type="checkbox" id="normal" name="palavra" value="normal">Normal!?</label></div>
+        <div class="checkbox"><label class="lradio" for="esquisito"><input type="checkbox" id="esquisito" name="palavra" value="esquisito">Esquisito...</label></div>
+        <div class="checkbox"><label class="lradio" for="pitico"><input type="checkbox" id="pitico" name="palavra" value="pitico">Pitico(a)</label></div>
+        <div class="checkbox"><label class="lradio" for="big"><input type="checkbox" id="big" name="palavra" value="big">Big boy/girl</label></div>
+      </fieldset>
+      <fieldset>
+        <label for="opinion">Deixe sua opinião sobre esse formulário: <textarea id="opinion" name="opinion" placeholder="Esse formulário é incrível..."></textarea></label>
+      </fieldset>
+      <button id="submit" type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
+
+
