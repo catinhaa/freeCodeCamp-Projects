@@ -1,1 +1,1 @@
-Projects and exercises from freeCodeCamp`s courses.
+Projects and exercises from freeCodeCamp's courses.
